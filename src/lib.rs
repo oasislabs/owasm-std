@@ -15,10 +15,10 @@
 extern crate core;
 
 #[cfg(not(feature="std"))]
-extern crate pwasm_alloc;
+extern crate owasm_alloc;
 
 #[cfg(not(feature="std"))]
-extern crate pwasm_libc;
+extern crate owasm_libc;
 
 #[allow(unused)]
 #[macro_use]

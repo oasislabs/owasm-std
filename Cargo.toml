@@ -13,8 +13,8 @@ categories = ["no-std", "embedded"]
 exclude = [ "demo/*" ]
 
 [dependencies]
-pwasm-alloc = { path = "alloc", version = "0.4" }
-pwasm-libc = { path = "libc", version = "0.2" }
+owasm-alloc = { path = "alloc", version = "0.4" }
+owasm-libc = { path = "libc", version = "0.2" }
 tiny-keccak = "1"
 
 [dependencies.byteorder]
@@ -28,5 +28,5 @@ default-features = false
 [features]
 default = []
 std = ["parity-hash/std"]
-strict = ["pwasm-libc/strict", "pwasm-alloc/strict"]
+strict = ["owasm-libc/strict", "owasm-alloc/strict"]
 panic_with_msg = []

@@ -6,7 +6,7 @@ use hash::H256;
 /// # Examples
 ///
 /// ```rust
-/// use pwasm_std::keccak;
+/// use owasm_std::keccak;
 ///
 /// let hash = keccak("hello world");
 ///
