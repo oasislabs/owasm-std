@@ -7,7 +7,7 @@ extern "C" {
 /// Overrides the default panic_fmt
 #[cfg(not(feature = "panic_with_msg"))]
 #[no_mangle]
-#[panic_implementation]
+#[panic_handler]
 pub fn panic_fmt(_info: &::core::panic::PanicInfo) -> ! {
 	unsafe {
 		panic(::core::ptr::null(), 0u32);
@@ -17,7 +17,7 @@ pub fn panic_fmt(_info: &::core::panic::PanicInfo) -> ! {
 /// Overrides the default panic_fmt
 #[cfg(feature = "panic_with_msg")]
 #[no_mangle]
-#[panic_implementation]
+#[panic_handler]
 pub fn panic_fmt(info: &::core::panic::PanicInfo) -> ! {
 	use Vec;
 	use byteorder::{LittleEndian, ByteOrder};
