@@ -6,8 +6,9 @@ license = "MIT/Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/oasislabs/owasm-std"
 homepage = "https://github.com/oasislabs/owasm-std"
+documentation = "https://docs.rs/crate/owasm-std/"
 description = "Rust WebAssembly standard library for contract development"
-keywords = ["wasm", "oasislabs", "parity", "blockchain"]
+keywords = ["wasm", "oasislabs", "parity", "webassembly", "blockchain"]
 categories = ["no-std", "embedded"]
 exclude = [ "demo/*" ]
 
