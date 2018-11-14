@@ -14,11 +14,22 @@ extern crate core;
 
 extern crate byteorder;
 
+#[allow(unused)]
+#[macro_use]
+extern crate alloc;
+pub use alloc::{vec, format};
+
 pub extern crate parity_hash;
 extern crate tiny_keccak;
 
 use byteorder::{LittleEndian, ByteOrder};
 
+pub use parity_hash as hash;
+
+pub use alloc::boxed::Box;
+pub use alloc::string::String;
+pub use alloc::str;
+pub use alloc::vec::Vec;
 pub use parity_hash as hash;
 
 // Safe wrapper around debug logging
